@@ -1,2 +1,2 @@
 # Opal-Compiler
-Scene Creator for Opal Engine
+Opal Compiler will a opl file that can be loaded by the Opal Engine.
