@@ -1,0 +1,30 @@
+{
+    "objects": [
+        {
+            "type": "staticModel",
+            "name": "Bear",
+            "filename": "bear"
+        },
+        {
+            "type": "line",
+            "name": "xLine",
+            "head": [100.0, 0.0, 0.0],
+            "tail": [-100.0, 0.0, 0.0],
+            "color": [1.0, 0.0, 0.0]
+        },
+        {
+            "type": "line",
+            "name": "yLine",
+            "head": [0.0, 100.0, 0.0],
+            "tail": [0.0, -100.0, 0.0],
+            "color": [0.0, 1.0, 0.0]
+        },
+        {
+            "type": "line",
+            "name": "zLine",
+            "head": [0.0, 0.0, 100.0],
+            "tail": [0.0, 0.0, -100.0],
+            "color": [0.0, 0.0, 1.0]
+        }
+    ]
+}

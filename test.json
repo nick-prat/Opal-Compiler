@@ -1,0 +1,20 @@
+{
+    "name": "test_scene",
+    "resources": [
+        {
+            "type": "model3d",
+            "filename": "wolf",
+            "resourcename": "wolf"
+        },
+        {
+            "type": "model3d",
+            "filename": "bear",
+            "resourcename": "bear"
+        },
+        {
+            "type": "texture",
+            "filename": "boar/boar",
+            "resourcename": "texture"
+        }
+    ]
+}

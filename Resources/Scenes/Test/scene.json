@@ -1,0 +1,85 @@
+{
+    "resources": [
+        {
+            "type": "model3d",
+            "resourcename": "m3d_bear",
+            "filename": "bear"
+        },
+        {
+            "type": "model3d",
+            "resourcename": "m3d_deer",
+            "filename": "deer"
+        },
+        {
+            "type": "model3d",
+            "resourcename": "m3d_wolf",
+            "filename": "wolf"
+        },
+        {
+            "type": "shader",
+            "resourcename": "shader_staticmodel",
+            "filename": "staticmodel",
+            "types": [
+                "fragment",
+                "vertex"
+            ],
+            "uniforms": [
+                "gSampler",
+                "gMVP"
+            ]
+        },
+        {
+            "type": "shader",
+            "resourcename": "shader_line",
+            "filename": "line",
+            "types": [
+                "fragment",
+                "vertex"
+            ],
+            "uniforms": [
+                "gColor",
+                "gMVP"
+            ]
+        }
+    ],
+    "staticObjects": [
+        {
+            "type": "staticmodel",
+            "name": "Bear",
+            "resource": "m3d_bear",
+            "translation": [15.0, 0.0, 0.0],
+            "rotation": [0.0, 0.0, 0.0],
+            "scale": [0.1, 0.1, 0.1]
+        },
+        {
+            "type": "staticmodel",
+            "name": "Deer",
+            "resource": "m3d_deer",
+            "translation": [-7.5, 0.0, 0.0, 4.0]
+        },
+        {
+            "type": "line",
+            "name": "xLine",
+            "shader": "shader_line",
+            "head": [100.0, 0.0, 0.0],
+            "tail": [-100.0, 0.0, 0.0],
+            "color": [1.0, 0.0, 0.0]
+        },
+        {
+            "type": "line",
+            "name": "yLine",
+            "shader": "shader_line",
+            "head": [0.0, 100.0, 0.0],
+            "tail": [0.0, -100.0, 0.0],
+            "color": [0.0, 1.0, 0.0]
+        },
+        {
+            "type": "line",
+            "name": "zLine",
+            "shader": "shader_line",
+            "head": [0.0, 0.0, 100.0],
+            "tail": [0.0, 0.0, -100.0],
+            "color": [0.0, 0.0, 1.0]
+        }
+    ]
+}
