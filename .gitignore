@@ -4,4 +4,6 @@ CMakeCache.txt
 CMakeFiles
 Makefile
 Resources
+oplc
 *.opl
+*.ninja*

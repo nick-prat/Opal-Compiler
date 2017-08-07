@@ -13,8 +13,8 @@
         },
         {
             "type": "texture",
-            "filename": "boar/boar",
-            "resourcename": "texture"
+            "filename": "misc/checkered",
+            "resourcename": "checkered"
         }
     ]
 }

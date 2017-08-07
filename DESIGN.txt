@@ -1,31 +1,41 @@
 OPL Format design
-OPL                     [char[3]]               OPL Tag
-Versrion                [unsigned short]        OPL Version
-Scene Name              [string]                Name of Scene
+OPL                             [char[3]]                               OPL Tag
+Versrion                        [unsigned short]                        OPL Version
+Scene Name                      [string]                                Name of Scene
 Resources:
-    Model3D Size            [size_t]                Model3D Count
-    Model3D Array           [vector<Model3D>]       Model3D vector
+    Model3D Size                [size_t]                                Model3D Count
+    Model3D Array               [vector<Model3D>]                       Model3D vector
     Model3D:
-        0x01                [char]                  Model3D Code
-        Model Name          [string]                Model3D Name
-        Mesh Array          [vector<Mesh>]          Mesh Array
-            Mesh:
-            Size            [size_t]                Size of Mesh
-            matIndex        [unsigned int]          Material Index
-            matName         [string]                Material Name
-            Vertex Size     [size_t]                Vertex Count
-            Vertex Array    [vector<Vertex>]        Vertex Array
+        Model3D Tag             [char]                                  Model3D Code
+        Model3D Size            [size_t]                                Model3D Size
+        Model Name              [string]                                Model3D Name
+        Mesh Array              [vector<Mesh>]                          Mesh Array
+        Mesh:
+            Size                [size_t]                                Size of Mesh
+            matIndex            [unsigned int]                          Material Index
+            matName             [string]                                Material Name
+            Vertex Size         [size_t]                                Vertex Count
+            Vertex Array        [vector<Vertex>]                        Vertex Array
             Vertex:
-                position    [float[3]]              Vertex Position
-                normal      [float[3]]              Vertex Normal
-                texCoord    [float[2]]              Texture Coordinate
-            Index Size      [size_t]                Index Count
-            Index Array     [vector<unsigned int>]  Index Array
-    Texture Size            [size_t]                Texture Count
-    Texture Array           [vector<Texture>]       Texture Array
+                position        [float[3]]                              Vertex Position
+                normal          [float[3]]                              Vertex Normal
+                texCoord        [float[2]]                              Texture Coordinate
+            Index Size          [size_t]                                Index Count
+            Index Array         [vector<unsigned int>]                  Index Array
+    Texture Size                [size_t]                                Texture Count
+    Texture Array               [vector<Texture>]                       Texture Array
     Texture:
-        0x02                [char]                  Texture Code
-        Texture Name        [string]                Texture Name
-        Width               [unsigned int]          Texture Width
-        Height              [unsigned int]          Texture height
-        Bytes               [vector<char>]          Pixel Buffer
+        Texture Code            [char]                                  Texture Code
+        Texture Name            [string]                                Texture Name
+        Width                   [unsigned int]                          Texture Width
+        Height                  [unsigned int]                          Texture height
+        Bytes                   [vector<char>]                          Pixel Buffer
+    Shader Size                 [size_t]                                Shader Count
+    Shader Array                [vector<Array>]                         Shader Array
+    Shader:
+        Shader Code             [char]                                  Shader Code
+        Shader Name             [sting]                                 Shader Name
+        File Array              [vector<pair<char, vector<bytes>>>]     File Array
+        File:
+            Shader Type         [char]                                  Shader Type
+            Shader Bytes        [vector<char>]                          Shader File Bytes
